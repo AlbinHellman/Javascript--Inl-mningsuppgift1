@@ -1,0 +1,21 @@
+.Uppgiften {
+
+    
+    display: flex;
+    margin: 0 auto;
+    width: 520px;
+    padding-top: 5rem; 
+}
+
+.förnamn {
+    margin-right: 3rem;
+}
+
+.e-postadress {
+    padding: 3rem;
+    margin: 0 auto;
+    width: 520px;
+}
+.knapp {
+    text-align: center;
+}
