@@ -19,3 +19,8 @@
 .knapp {
     text-align: center;
 }
+.container {
+    margin: 0 auto;
+    width: 520px;
+    margin-top: 4rem;
+}
