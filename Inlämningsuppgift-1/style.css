@@ -22,5 +22,13 @@
 .container {
     margin: 0 auto;
     width: 520px;
-    margin-top: 4rem;
 }
+
+.space {
+    margin-bottom: 1rem;
+    background-color: rgb(182, 178, 178);
+    border-radius: 10px;
+}
+
+
+
