@@ -1,24 +1,5 @@
 let addd = [
-    {
-        id: '1',
-        title: 'nummer 1',
-        completed: false
-    },
-    {
-        id: '2',
-        title: 'nummer 2',
-        completed: false
-    },
-    {
-        id: '3',
-        title: 'nummer 3',
-        completed: false
-    },
-    {
-        id: '4',
-        title: 'nummer 4',
-        completed: false
-    },
+    
 ]
 
 const input = document.querySelector('#name');
@@ -29,7 +10,7 @@ const listadd = () => {
     output.innerHTML = ''
 
     addd.forEach(läggtill => {
-        output.innerHTML +=`<div id="${add.id}" class="bg-info p-2 d-flex justify-content-between mt-2">${add.title}<button class="btn btn-danger px-4">X</button></div>`
+        output.innerHTML +=`<div id="${add.id}" class="bg-info p-2 d-flex justify-content-between mt-2">${addd.title}<button class="btn btn-danger px-4">X</button></div>`
     })
 }
 
@@ -46,8 +27,12 @@ addBtn.addEventListener('click', (e) => {
         listadd();
         input.value='';
     } else {
-        input.classList.add('is-invalid');
+        input.classList.all('is-invalid');
     }
+})
+
+output.addEventListener('click', (e) => {
+    addd = addd.filter(add => add.id !== e.target.parentNode.id)
 })
 
 listadd();
