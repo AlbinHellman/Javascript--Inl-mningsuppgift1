@@ -1,4 +1,9 @@
 let addd = [
+    {
+        id: '1',
+        title: 'Lägg till',
+        completed: false
+    },
     
 ]
 
