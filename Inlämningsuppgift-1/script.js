@@ -7,15 +7,17 @@ let addd = [
     
 ]
 
+const form = document.querySelector('#todoForm');
 const input = document.querySelector('#name');
 const addBtn = document.querySelector('#läggtill');
 const output = document.querySelector('#add');
+
 
 const listadd = () => {
     output.innerHTML = ''
 
     addd.forEach(läggtill => {
-        output.innerHTML +=`<div id="${addd.id}" class="bg-primary p-3 d-flex justify-content-between mt-2"> ${addd.title} <button class="btn btn-dark px-3">X</button></div>`
+        output.innerHTML +=`<div id="${addd.id}" class="bg-primary p-3 d-flex justify-content-between mt-2">${addd.title}<button class="btn btn-dark px-3">X</button></div>`
     })
 }
 
