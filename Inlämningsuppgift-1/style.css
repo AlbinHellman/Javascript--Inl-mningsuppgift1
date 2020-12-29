@@ -11,6 +11,18 @@
     margin-right: 3rem;
 }
 
+.förnamn p{
+    font-weight: bold;
+    margin-bottom: -2rem;
+    font-family: 'Roboto', serif;
+}
+
+.efternamn p{
+    font-weight: bold;
+    margin-bottom: -2rem;
+    font-family: 'Roboto', serif;
+}
+
 .e-postadress {
     padding-top:2rem;
     padding-bottom: 2rem;
@@ -19,10 +31,21 @@
 
 }
 
-
+.e-postadress p{
+    font-weight: bold;
+    margin-bottom: -2rem;
+    font-family: 'Roboto', serif;
+}
+.flytta {
+    margin: 0 auto;
+    width: 520px;
+}
 .knapp {
     text-align: center;
+    
 }
+
+
 .container {
     margin: 0 auto;
     width: 520px;

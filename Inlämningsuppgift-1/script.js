@@ -15,7 +15,7 @@ const listadd = () => {
     output.innerHTML = ''
 
     addd.forEach(läggtill => {
-        output.innerHTML +=`<div id="${add.id}" class="bg-info p-2 d-flex justify-content-between mt-2">${addd.title}<button class="btn btn-danger px-4">X</button></div>`
+        output.innerHTML +=`<div id="${addd.id}" class="bg-primary p-3 d-flex justify-content-between mt-2"> ${addd.title} <button class="btn btn-dark px-3">X</button></div>`
     })
 }
 
@@ -30,6 +30,7 @@ addBtn.addEventListener('click', (e) => {
         }
         addd.push(add);
         listadd();
+ 
         input.value='';
     } else {
         input.classList.all('is-invalid');
