@@ -12,15 +12,13 @@
 }
 
 .förnamn p{
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: -2rem;
-    font-family: 'Roboto', serif;
 }
 
 .efternamn p{
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: -2rem;
-    font-family: 'Roboto', serif;
 }
 
 .e-postadress {
@@ -32,9 +30,8 @@
 }
 
 .e-postadress p{
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: -2rem;
-    font-family: 'Roboto', serif;
 }
 .flytta {
     margin: 0 auto;
@@ -44,6 +41,8 @@
     text-align: center;
     
 }
+
+
 
 
 .container {

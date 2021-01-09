@@ -1,4 +1,6 @@
-let addd = [
+
+
+let addd= [
     {
         id: '1',
         title: 'Lägg till',
@@ -35,7 +37,7 @@ addBtn.addEventListener('click', (e) => {
  
         input.value='';
     } else {
-        input.classList.all('is-invalid');
+        input.classList.add('is-invalid');
     }
 })
 
