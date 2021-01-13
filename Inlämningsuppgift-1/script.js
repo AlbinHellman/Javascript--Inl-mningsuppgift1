@@ -1,5 +1,3 @@
-
-
 let addd= [
     {
         id: '1',
@@ -10,7 +8,7 @@ let addd= [
 ]
 
 const form = document.querySelector('#todoForm');
-const input = document.querySelector('#name');
+const input = document.querySelector("#name");
 const addBtn = document.querySelector('#läggtill');
 const output = document.querySelector('#add');
 
@@ -46,3 +44,10 @@ output.addEventListener('click', (e) => {
 })
 
 listadd();
+
+
+
+
+
+
+
