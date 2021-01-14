@@ -24,8 +24,8 @@ function insertNewRecord(data){
     cell3 = newRow.insertCell(2);
     cell3.innerHTML = data.email;
     cell4 = newRow.insertCell(3);
-    cell4.innerHTML = `<a>Edit</a>
-                       <a>Delete</a>`;
+    cell4.innerHTML = `<a>Ändra</a>
+    <a>Ta Bort</a>`;
 }
 
 
