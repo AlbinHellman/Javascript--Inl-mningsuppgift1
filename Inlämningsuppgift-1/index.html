@@ -11,21 +11,21 @@
 </head>
 <body>
 
-    <form id="todoForm">
+    <form id="todoForm" onsubmit="event.preventDefault();onFormSubmit();">
     <div class="Uppgiften">
         <div class="förnamn">
             <label for="fname"><p>Förnamn</p></label>
-            <input type="text" id="name" name="fname" placeholder="Förnamn">
+            <input type="text" id="name" name="name" placeholder="Förnamn">
         </div>
         <div class="efternamn">
             <label for="lname"><p>Efternamn</p></label>
-            <input id="name2" name ="lname" type="text" placeholder="Efternamn">
+            <input id="name2" name ="name2" type="text" placeholder="Efternamn">
         </div>
     </div>
     <div class="e-postadress">
         <label for="e-post"><p>E-postadress</p></label>
         <div class="flytta">
-        <input type="text" id="name3" name="e-post" placeholder="E-postadress">
+        <input type="text" id="email" name="email" placeholder="E-postadress">
         </div>
     </div>
     <div class="knapp">
@@ -33,11 +33,20 @@
     </div>
     </form>
     <div class="container">
-        <div class="p-5" id="add">
-            
-            <div class="p-2 d-flex justify-content-between mt-2">text <button class="btn btn-danger px-4">X</button></div>
-            <div class="p-2 d-flex justify-content-between mt-2">text <button class="btn btn-danger px-4">X</button></div>
-        </div>   
+        <td>
+        <table class="p-5" id="add">
+            <thead>
+                <tr>
+            <th>ID:</th>
+            <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </td>
     </div>
 
 
