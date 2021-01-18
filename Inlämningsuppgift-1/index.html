@@ -11,21 +11,24 @@
 </head>
 <body>
 
-    <form id="todoForm" onsubmit="event.preventDefault();onFormSubmit();">
+    <form id="form">
     <div class="Uppgiften">
         <div class="förnamn">
             <label for="fname"><p>Förnamn</p></label>
             <input type="text" id="name" name="name" placeholder="Förnamn">
+            <small class="text-danger" id="förnamnerror">Någonting blev fel, försök igen!</small>
         </div>
         <div class="efternamn">
             <label for="lname"><p>Efternamn</p></label>
-            <input id="name2" name ="name2" type="text" placeholder="Efternamn">
+            <input type= "text" id="name2" placeholder="Efternamn">
+            <small class="text-danger" id="efternamnerror">Någonting blev fel, försök igen!</small>
         </div>
     </div>
     <div class="e-postadress">
         <label for="e-post"><p>E-postadress</p></label>
         <div class="flytta">
-        <input type="text" id="email" name="email" placeholder="E-postadress">
+        <input type="email" id="email" name="email" placeholder="E-postadress">
+        <small class="text-danger" id="eposterror"><div>Någonting blev fel, försök igen!</div></small>
         </div>
     </div>
     <div class="knapp">
@@ -33,20 +36,29 @@
     </div>
     </form>
     <div class="container">
-        <td>
-        <table class="p-5" id="add">
-            <thead>
-                <tr>
-            <th>ID:</th>
-            <th></th>
-                </tr>
-            </thead>
-            <tbody>
-
-
-            </tbody>
-        </table>
-    </td>
+        <h1>ID:</h1>
+        <div class="användare">
+            <h3>Förnamn Efternamn</h3>
+            <div class="flex">
+            <p>e-post@gmail.com</p>
+            <div class="knappar">
+                <button class="btn btn-primary">Ändra</button>
+                <button class="btn btn-danger">Ta Bort</button>
+            </div>
+            </div>
+            <div class="användare">
+                <h3>Förnamn Efternamn</h3>
+                <div class="flex">
+                <p>e-post@gmail.com</p>
+                <div class="knappar">
+                    <button class="btn btn-primary">Ändra</button>
+                    <button class="btn btn-danger">Ta Bort</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
     </div>
 
 

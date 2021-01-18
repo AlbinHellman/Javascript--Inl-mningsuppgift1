@@ -33,6 +33,8 @@
     font-weight: bolder;
     margin-bottom: -2rem;
 }
+
+
 .flytta {
     margin: 0 auto;
     width: 520px;
@@ -40,15 +42,48 @@
 .knapp {
     text-align: center;
     
+    
 }
-
-
-
 
 .container {
     margin: 0 auto;
-    width: 520px;
+    width: 550px;
 }
+
+.container h1{
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.användare h3{
+    padding: 0.5rem
+}
+
+.användare p{
+    padding:0.5rem;
+}
+
+.användare{
+    box-shadow: 5px 5px 2px 0;
+    background-color: rgba(19, 19, 243, 0.863);
+    
+    
+}
+
+.knappar {
+    margin-left: 13rem;
+    
+    
+    
+}
+
+.flex {
+    display: flex;
+    
+}
+
+
+
 
 
 

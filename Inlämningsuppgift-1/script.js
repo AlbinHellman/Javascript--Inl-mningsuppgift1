@@ -1,32 +1,58 @@
-function onFormSubmit(){
-    var formData = readFormData();
-    insertNewRecord(formData);
+const form = document.querySelector('#form');
+const output = document.querySelector('#output');
 
+const validate = id => {
+    const input = document.querySelector('#'+id);
+    const error = document.querySelector('#'+id+'-error');
+
+    if(input.id === "name") {
+        if(input.value === '') {
+            förnamnerror.innerText = 'Var vänligen att ange ett namn';
+            return false;
+        } else if(input.value.length < 3) {
+            förnamnerror.innerText = 'Ditt namn måste minst tre tecken'
+            return false;
+        }
+        else {
+            error.innerText = '';
+            return true;
+        }
+    }
+    
+    if(input.id === "name2") {
+        if(input.value === '') {
+            efternamnerror.innerText = 'Var vänligen att ange ett namn';
+            return false;
+        } else if(input.value.length < 3) {
+            efternamnerror.innerText = 'Ditt namn måste minst tre tecken'
+            return false;
+        }
+        else {
+            error.innerText = '';
+            return true;
+        }
+    } 
+
+    if(input.id === "email") {
+        let regEx = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+
+        if(regEx.test(input.value)) {
+            return true;
+        } else {
+            eposterror.innerText = 'Var vänligen att ange en giltig email address'
+        }
+
+    }
 }
 
-function readFormData() {
-    var formData = {};
-    formData["name"] = document.getElementById("name").value;
-    formData["name2"] = document.getElementById("name2").value;
-    formData["email"] = document.getElementById("email").value;
-    return formData;
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-}
-
-
-function insertNewRecord(data){
-    var table = document.getElementById("add").getElementsByTagName('tbody')[0];
-    var newRow = table.insertRow(table.length);
-    cell1 = newRow.insertCell(0);
-    cell1.innerHTML = data.name;
-    cell2 = newRow.insertCell(1);
-    cell2.innerHTML = data.name2;
-    cell3 = newRow.insertCell(2);
-    cell3.innerHTML = data.email;
-    cell4 = newRow.insertCell(3);
-    cell4.innerHTML = `<a>Ändra</a>
-    <a>Ta Bort</a>`;
-}
+    document.querySelectorAll('input').forEach(input => {
+        validate(input.id)
+        console.log(input.id)
+    })
+})
 
 
 
