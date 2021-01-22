@@ -1,19 +1,17 @@
 const form = document.querySelector('#form');
 const output = document.querySelector('#output');
-const firstName = document.querySelector('#name');
-const lastName = document.querySelector('#name2');
-const email = document.querySelector('#email1');
+const förnamn = document.querySelector('#name1');
+const efternamn = document.querySelector('#name2');
+const epost = document.querySelector('#email1');
 
 let users = [];
 
 const renderUsers = () => {
 
-    
-
-    output.innerHTML = '';
+output.innerHTML = '';
     users.forEach(user => {
 
-        let html = ` 
+        let html = `
     <div class="användare">
                 <h3>${user.firstName} ${user.lastName}</h3>
                 <div class="flex">
@@ -23,8 +21,7 @@ const renderUsers = () => {
                     <button class="btn btn-danger">Ta Bort</button>
                 </div>
                 </div>
-            </div>
-`
+            </div> `
         output.innerHTML += html
     })
 }
@@ -33,7 +30,7 @@ const renderUsers = () => {
 const validateText = id => {
     const input = document.querySelector('#'+id);
         const error = document.querySelector('#'+id+'-error');
-    if(input.id === "name") {
+    if(input.id === "name1") {
         if(input.value === '') {
             förnamnerror.innerText = 'Var vänligen att ange ett förnamn';
             return false;
@@ -112,7 +109,7 @@ const createUser = (firstName, lastName, email) => {
     console.log(users);
 }
 
-renderUsers();
+ renderUsers();
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -120,10 +117,10 @@ form.addEventListener('submit', (e) => {
     validate();
     
 
-    if(validateText('name') && validateText('name2') && validateEmail('email1')) {
+    if(validateText('name1') && validateText('name2') && validateEmail('email1')) {
 
-        createUser(firstName.value, lastName.value, email.value);
-        renderUsers();
+        createUser(name1.value, name2.value, email1.value);
+         renderUsers();
     }
 
    
